@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="17809" started-at="2017-06-29T03:11:02Z" finished-at="2017-06-29T03:11:20Z">
+    <groups>
+    </groups>
+    <test name="LoginMail " duration-ms="17809" started-at="2017-06-29T03:11:02Z" finished-at="2017-06-29T03:11:20Z">
+      <class name="com.po.testScript.mailLogin_001_LoginSuccessFunction_Test">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.po.testScript.mailLogin_001_LoginSuccessFunction_Test@3cef309d]" name="beforeTest" is-config="true" duration-ms="7" started-at="2017-06-29T11:11:02Z" finished-at="2017-06-29T11:11:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loginAcc(java.lang.String)[pri:0, instance:com.po.testScript.mailLogin_001_LoginSuccessFunction_Test@3cef309d]" name="loginAcc" duration-ms="15758" started-at="2017-06-29T11:11:02Z" finished-at="2017-06-29T11:11:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[the2ndindec]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAcc -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.po.testScript.mailLogin_001_LoginSuccessFunction_Test@3cef309d]" name="afterTest" is-config="true" duration-ms="2025" started-at="2017-06-29T11:11:18Z" finished-at="2017-06-29T11:11:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.po.testScript.mailLogin_001_LoginSuccessFunction_Test -->
+    </test> <!-- LoginMail  -->
+  </suite> <!-- Suite -->
+</testng-results>

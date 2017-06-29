@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="suite1下有多test" verbose="1" preserve-order="true" parallel="false">
+    <test name="有参数的用例的test">
+        <classes>
+            <class name="com.po.testScript.ReportTest">
+                <methods>
+                    <include name="dataProviderTest"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="成功的test">
+        <classes>
+            <class name="com.po.testScript.ReportTest">
+                <methods>
+                    <include name="testTrue"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="com.pack.listeners.ExtentTestNGIReporterListener"></listener>
+        <!--<listener class-name="test.sen.example.ExtentTestNGITestListener"></listener>-->
+    </listeners>
+</suite>

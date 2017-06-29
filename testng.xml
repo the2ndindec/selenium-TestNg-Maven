@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<!-- <parameter name="driverConfgFilePath" value="config/driver.properties"/>
+	<parameter name="browserName" value="firefox" />
+	页面元素10秒不出现超时时间
+	<parameter name="timeOut" value="20" />
+	定义测试的地址
+	<parameter name="testurl" value=" " /> -->
+	
+	<listeners>
+		<!-- class-name的值填写为时间创建的监听器的路径 -->
+		<listener class-name="com.test.listeners.ExtentTestNGIReporterListener"></listener>
+		<!-- 失败用例重跑 -->
+		<!-- <listener class-name="com.test.listeners.RetryListener" /> -->
+		
+	</listeners>
+	
+	<test name="LoginMail ">
+		<!--定义组 -->
+		<!-- <groups> <run> <include name="functest" /> </run> </groups> -->
+
+		<!-- Group of Groups -->
+		<!-- <groups> <define name = "all"> <include name="first"/> <include name="second"/> 
+			</define> <run> <include name="all"/> </run> </groups> -->
+
+		<!-- 排除组 ,使用<exclude>标签 -->
+		<!-- <groups> <define name="all"> <include name="checkintest" /> <exclude 
+			name="functest" /> </define> <run> <include name="all" /> </run> </groups> -->
+
+		<parameter name="userID" value="the2ndindec" />
+
+		<classes>
+			<class name="com.po.testScript.mailLogin_001_LoginSuccessFunction_Test">
+				<methods>
+					<include name="loginAcc" />
+					<include name="sendEamil" />
+				</methods>
+			</class>
+			<!-- <class name="com.po.testScript.WindowsSwitch"/> -->
+		</classes>
+	</test> <!-- Test -->
+
+	<!-- 执行多个测试用例 -->
+	<!-- <test name = "click_sendmail"> <classes> <class name = "com.po.testScript.SendMail"> 
+		<methods> <include name="clickSendMail"/> </methods> </class> </classes> 
+		</test> -->
+
+</suite> <!-- Suite -->
